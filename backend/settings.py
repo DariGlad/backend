@@ -34,6 +34,7 @@ ALLOWED_HOSTS = env.list("ALLOWED_HOSTS", default=["*"])
 # Application definition
 MY_APPS = [
     'core',
+    'company',
 ]
 
 INSTALLED_APPS = [
