@@ -32,7 +32,7 @@ class ProviderSerializer(serializers.ModelSerializer):
 
 
 class ProviderUpdateSerializer(serializers.ModelSerializer):
-    product = ProductSerializer(many=True, read_only=True)
+    products = ProductSerializer(many=True, read_only=True)
     contacts = ContactsSerializer(read_only=True)
 
     class Meta:
