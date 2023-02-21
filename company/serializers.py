@@ -16,7 +16,7 @@ class ContactsSerializer(serializers.ModelSerializer):
 
 
 class ProviderSerializer(serializers.ModelSerializer):
-    product = ProductSerializer(many=True, read_only=True)
+    products = ProductSerializer(many=True, read_only=True)
     contacts = ContactsSerializer(required=True)
 
     class Meta:
